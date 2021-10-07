@@ -58,5 +58,21 @@ class binaersuche {
 		System.out.println(ende + "|" + mList.length);
         return false;
     }
+	   boolean binarySearch(int arr[], int low, int high, int search)
+	    {
+	        if (high >= low) {
+	            int index = low + (high - low) / 2;
+	            if (arr[index] == search) {
+	                return true;
+	            }
+	            if (arr[index] > search) {
+	                return binarySearch(arr, low, index - 1, search);
+	            }
+	            return binarySearch(arr, index + 1, high, search);
+	        }
+	  
+	        
+	        return false;
+	    }
 
 }
