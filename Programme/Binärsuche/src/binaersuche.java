@@ -5,6 +5,8 @@ class binaersuche {
 
 	static int counter = 0;
 	static long ende;
+	
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Wie viele zahlen sollen in Ihr Array");
