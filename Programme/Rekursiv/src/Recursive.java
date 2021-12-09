@@ -8,14 +8,14 @@ public class Recursive {
 	
 		System.out.print("Hochfunktion rekursiv: ");
 		start = System.nanoTime();
-		long powRekursiv = pow(2,3);
+		long powRekursiv = pow(3,8);
 		end = System.nanoTime();
 		System.out.println(powRekursiv + ", berechnet in " + (end - start) / 1000 + " Millisekunden");
 
 		System.out.print("Hochfunktion endrekursiv: ");
 		start = System.nanoTime();
-		long powEndrekursiv = powEnd(1, 2, 3);
-		end = System.nanoTime();
+		long powEndrekursiv = powEnd(1, 3, 8);
+		end = System.nanoTime(); 
 		System.out.println(powEndrekursiv + ", berechnet in " + (end - start) / 1000 + " Millisekunden");
 
 	}
